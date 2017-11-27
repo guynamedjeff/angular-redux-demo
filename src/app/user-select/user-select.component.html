@@ -1,0 +1,8 @@
+<div class="user-select-group">
+  <h2>Component C</h2>
+  <p>{{ message }}</p>
+  <h4>Select a Username</h4>
+  <div class="username-button-group" *ngFor="let name of names">
+    <button class="username-button" (click)="editText($event)">{{name}}</button>
+  </div>
+</div>
